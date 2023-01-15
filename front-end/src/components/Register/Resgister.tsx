@@ -17,6 +17,9 @@ export function Register(props: { isDarkMode: boolean }) {
   const [loading, setLoading] = useState(false);
 
   async function handleSubmit(event: FormEvent) {
+    if (password == "" || login == "") {
+      setLoading(false);
+    }
     event.preventDefault();
     const res = await RegisterUser(login, password);
     if (res == "Login já existe!") {
