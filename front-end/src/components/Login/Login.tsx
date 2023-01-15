@@ -19,9 +19,7 @@ function Login(props: { isDarkMode: boolean }) {
 
   async function handleSubmit(event: FormEvent) {
     event.preventDefault();
-    if (password == "" || username == "") {
-      setLoading(false);
-    }
+
     const res = await LoginApi(username, password, rememberMe);
     if (typeof res == "string") {
       setLoading(false);
@@ -174,6 +172,9 @@ function Login(props: { isDarkMode: boolean }) {
           <button
             onClick={() => {
               setLoading(true);
+              if (password == "" || username == "") {
+                setLoading(false);
+              }
             }}
             id="submitButton"
             type="submit"
