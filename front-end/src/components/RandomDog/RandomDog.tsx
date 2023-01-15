@@ -29,7 +29,7 @@ export function RandomDog() {
     const getAuthr = async () => {
       const response = await getAuth();
       if (response.message != "ok") {
-        navigate("/login");
+        navigate("/");
         alert("Token Inválido!");
       }
     };

@@ -28,7 +28,7 @@ function Clients(props: { isDarkMode: boolean }) {
     const users = await GetUsers();
 
     if (typeof users == "string" || users.data.auth == false) {
-      navigate("/login");
+      navigate("/");
     } else {
       setClients(users.data);
       setLoading(false);
