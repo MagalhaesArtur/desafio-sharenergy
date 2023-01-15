@@ -189,6 +189,23 @@ export function Register(props: { isDarkMode: boolean }) {
           >
             {loading ? <Loading size={30} /> : "Criar Conta"}
           </button>
+          <footer className="mt-4">
+            <h2
+              className={`${
+                props.isDarkMode ? "text-white" : "text-slate-800"
+              }`}
+            >
+              Já tem uma conta?{" "}
+              <a
+                className="text-blue-600 underline cursor-pointer hover:text-blue-500 transition-all"
+                onClick={() => {
+                  navigate("/login");
+                }}
+              >
+                Login
+              </a>
+            </h2>
+          </footer>
         </form>
       </div>
     </div>

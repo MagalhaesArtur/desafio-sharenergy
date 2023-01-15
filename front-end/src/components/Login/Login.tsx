@@ -189,7 +189,7 @@ function Login(props: { isDarkMode: boolean }) {
             >
               Ainda não tem uma conta?{" "}
               <a
-                className="text-blue-600 underline hover:text-blue-500 transition-all"
+                className="text-blue-600 underline cursor-pointer hover:text-blue-500 transition-all"
                 onClick={() => {
                   navigate("/register");
                 }}
