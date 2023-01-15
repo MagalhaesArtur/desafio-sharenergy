@@ -22,7 +22,7 @@ function App() {
 
       <Router>
         <Routes>
-          <Route path="/login" element={<Login isDarkMode={isDarkMode} />} />
+          <Route path="/" element={<Login isDarkMode={isDarkMode} />} />
           <Route
             path="/clients"
             element={<Clients isDarkMode={isDarkMode} />}
