@@ -1,0 +1,16 @@
+@media (max-width: 767px) {
+  #searchBox {
+    width: 100%;
+
+    flex-direction: column;
+    margin-bottom: 20px;
+    justify-content: start;
+  }
+  #searchBar {
+    width: 500px;
+  }
+}
+
+#searchContainer label {
+  color: white;
+}

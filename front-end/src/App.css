@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  overflow-x: hidden;
+  min-height: 100%;
+  overflow-y: inherit;
+}
+
+@media (max-width: 767px) {
+  #navBar {
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+  #themeSwitch {
+    right: 50px;
+  }
+}
+
+#dark {
+  overflow-x: hidden;
+
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  min-height: 100%;
+}
+#vanilla {
+  background-color: #fff;
+}
+#form {
+  height: 400px;
+  width: 700px;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border-radius: 10px;
+}
+
+@media (max-width: 770px) {
+  #form {
+    width: 80%;
+  }
+}
+
+.input {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 2rem;
+  width: 250px;
+  height: 3rem;
+  padding: 1rem;
+  border-width: 2px;
+  border-color: transparent;
+  outline: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition-duration: 200ms;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #0e5cad white;
+}
+
+/* Works on Chrome, Edge, and Safari */
+
+body::-webkit-scrollbar {
+  width: 0px;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #d0d3d4;
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #00a2a2;
+  border-radius: 20px;
+  border: 3px solid #d0d3d4;
+}
+.input:focus {
+  border-width: 2px;
+  border-color: rgb(203 213 225);
+  transition-duration: 200ms;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+}
+#submitButton {
+  background: linear-gradient(to right, #00a2a2 0%, #9cad1c 79%);
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  width: 65%;
+  height: 3rem;
+  border-width: 2px;
+  border-color: transparent;
+  color: white;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition-duration: 200ms;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+}
+
+#submitButton:hover {
+  transition-duration: 200ms;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  border-width: 2px;
+  border-color: rgb(203 213 225);
+}
+
+.input :focus {
+  display: inline-block;
+  box-shadow: 0 0 0 0.2rem #b9abe0;
+  backdrop-filter: blur(12rem);
+  border-radius: 2rem;
+}
+
+.input ::placeholder {
+  color: #b9abe099;
+  font-weight: 100;
+  font-size: 1rem;
+}
+
+.input1 {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 2rem;
+  width: 250px;
+  height: 3rem;
+  padding: 1rem;
+  border-width: 2px;
+  border-color: transparent;
+  outline: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition-duration: 200ms;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+}
