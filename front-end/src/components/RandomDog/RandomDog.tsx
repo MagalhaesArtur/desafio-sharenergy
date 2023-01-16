@@ -68,7 +68,11 @@ export function RandomDog() {
             </div>
           )}
         </div>
-      ) : null}
+      ) : (
+        <div className=" flex flex-col gap-6 items-center justify-center h-[100vh] w-[100vw]">
+          <Loading size={60} />
+        </div>
+      )}
     </>
   );
 }
