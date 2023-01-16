@@ -43,6 +43,8 @@ export function RandomDog() {
     <>
       {isAuth ? (
         <div className=" flex flex-col gap-6 items-center justify-start h-[100vh] w-[100vw]">
+          <NavBar />
+
           <button
             className="py-2 px-4 ml-4 bg-green-700 rounded-lg transition-all hover:bg-green-600 text-white font-semibold text-xl"
             onClick={() => {
