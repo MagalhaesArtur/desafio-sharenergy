@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { LoginApi } from "../../utils/api";
 import { RegisterUser } from "../../utils/register";
 import { Loading } from "../Loading";
+import "./styles.css";
 
 export function Register(props: { isDarkMode: boolean }) {
   let navigate = useNavigate();
@@ -96,7 +97,6 @@ export function Register(props: { isDarkMode: boolean }) {
             label="Login"
             className="!text-red-700"
             type={"text"}
-            variant="outlined"
             inputProps={{ maxLength: 30 }}
             value={login}
             onChange={(e) => setLogin(e.target.value)}
